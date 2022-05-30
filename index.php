@@ -37,7 +37,7 @@
     /* Funkce 'fetch_data()' vrací dvě asociativní pole, kde první obsahuje informace o uživatelích. Druhé pole obsahuje částky, které každý uživatel zaplatil,
     jak v czk, tak v eurech. Nejprve procházíme celou databázi while cyklem. Do proměnných (ř. 49 - ř. 52) si načteme hodnoty z databéze, které
     budeme později potřebovat. Jednou z proměnných je datum, které jsme uložili do proměnné '$date'. Tohle datum je porovnáváno s datem, které je
-    o 1 měsíc starší ($'$date_without_month'), než to, které nám vrátila funkce 'fetch_data'. V případě, že je datum v proměnné '$date' bližší k dnešnímu, 
+    o 1 měsíc starší ($'$date_without_month'), než to, které nám vrátila funkce 'get_current_date()'. V případě, že je datum v proměnné '$date' bližší k dnešnímu, 
     než uložené datum v proměnné '$date_without_month' jsou do proměnné '$user_data' vkládáány informace o uživatelích (jméno, ulice, ..), které jsou každému 
     uživateli do pole '$users' vloženy jen jednou. Proměnná '$key' obsahuje id uživatele a měnu (např: 1_czk, 5_eur), která slouží jako klíč pro odkázání na sumu, 
     kterou každý uživatel zaplatil v obou měnách. Jesliže klíč v poli existuje, pak je do něj přičtena hodnota z proměnné '$price', která obsahuje cenu 
