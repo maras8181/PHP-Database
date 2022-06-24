@@ -94,7 +94,6 @@
     
     $sql = "SELECT * FROM transactions, users WHERE transactions.user_id = users.id";
     $result = mysqli_query(connect_to_database(), $sql);
-    echo gettype connect_to_database();
     $result_2 = mysqli_query(connect_to_database(), $sql);
     if (!$result and !$result_2){
         die("The query is not valid.");
