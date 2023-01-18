@@ -11,7 +11,7 @@
 
      <?php
     
-    /* Funkce 'connect_to_database()' zajistí připojení do databáze 'feo_database'. */
+    /* Funkce 'connect_to_database()' zajistí připojení do databáze. */
     function connect_to_database(){
         $connection = new mysqli("localhost", "root", "", "name_of_database");
 
